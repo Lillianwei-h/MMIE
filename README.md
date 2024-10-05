@@ -3,10 +3,11 @@
   
 # <p align="center"><b>MMIE: Massive Multimodal Interleaved Comprehension Benchmark for Large Vision-Language Models</b></p>
 <p align="center">
-<a href="https://mmie-bench.github.io">[🤖 Project]</a>
+<a href="https://mmie-bench.github.io">[📖 Project]</a>
 <a href="https://arxiv.org/abs/xxxxx">[📄 Paper]</a>
-<a href="https://huggingface.co/MMIE/MMIE-Eval">[🤖 Eval Model]</a>
+<a href="https://github.com/Lillianwei-h/MMIE">[💻 Code]</a>
 <a href="https://huggingface.co/datasets/MMIE/MMIE">[📝 Dataset]</a>
+<a href="https://huggingface.co/MMIE/MMIE-Eval">[🤖 Eval Model]</a>
 <a href="https://huggingface.co/spaces/MMIE/Leaderboard">[🏆 Leaderboard]</a>
 </p>
 
