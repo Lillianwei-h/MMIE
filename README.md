@@ -1,7 +1,10 @@
+# MMIE
+
+
 # MMIE-Eval
 ## Preparation
 ### Data
-Your data format should be:
+Your to-eval data format should be:
 ```
 [
     {
@@ -44,6 +47,12 @@ INPUT_DIR
 ```
 
 ### Environment
+- Clone code from this repo
+```bash
+git clone https://github.com/Lillianwei-h/MMIE
+cd MMIE
+```
+- Build environment
 ```bash
 conda create -n MMIE python=3.11
 conda activate MMIE
