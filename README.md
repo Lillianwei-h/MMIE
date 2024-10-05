@@ -17,10 +17,14 @@
 
 </div>
 
+## Setup
+We have host MMIE dataset on [HuggingFace]("https://huggingface.co/datasets/MMIE/MMIE"), where you should request access on this page first and shall be automatically approved.
+Please download all the files in this repository and unzip `images.tar.gz` to get all images. We also provide `overview.json`, which is an example of the format of our dataset.
 
-# MMIE-Eval
-## Preparation
-### Data
+
+## Model Evaluation
+### Setup
+#### Dataset Preparation
 Your to-eval data format should be:
 ```
 [
@@ -63,7 +67,7 @@ INPUT_DIR
         |...
 ```
 
-### Environment
+#### Installation
 - Clone code from this repo
 ```bash
 git clone https://github.com/Lillianwei-h/MMIE
@@ -76,13 +80,15 @@ conda activate MMIE
 pip install -r requirements.txt
 ```
 
-### Model
+#### Model Preparation
 You can download our [MMIE-Eval](https://huggingface.co/Lillianwei/MMIE-Eval) model on huggingface.
 You can also refer to the document of [InternVL 2.0](https://internvl.readthedocs.io/en/latest/internvl2.0/introduction.html) to find more details since MMIE-Eval is a fine-tuned version of InternVL 2.0 4B.
 
-## Run
+#### Run
 ```bash
 python main.py --model_path PATH_TO_MMIE-Eval --input_dir INPUT_DIR --input_file INPUT_FILE
 ```
 
 The output file should be at `./eval_outputs/eval_result.json` by default. You can also use arguments `--output_dir` and `--output_file` to specify your intended output position.
+
+## Citation
