@@ -1,4 +1,20 @@
-# MMIE
+<div align="center">
+<img src='https://cdn-uploads.huggingface.co/production/uploads/65941852f0152a21fc860f79/hLXIpSd7PzouZx0FULvgP.png'  width=300px>
+  
+# <p align="center"><b>MMIE: Massive Multimodal Interleaved Comprehension Benchmark for Large Vision-Language Models</b></p>
+<p align="center">
+<a href="https://mmie-bench.github.io">[🤖 Project]</a>
+<a href="https://arxiv.org/abs/xxxxx">[📄 Paper]</a>
+<a href="https://huggingface.co/MMIE/MMIE-Eval">[🤖 Eval Model]</a>
+<a href="https://huggingface.co/datasets/MMIE/MMIE">[📝 Dataset]</a>
+<a href="https://huggingface.co/spaces/MMIE/Leaderboard">[🏆 Leaderboard]</a>
+</p>
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/license/mit)
+
+---
+
+</div>
 
 
 # MMIE-Eval
