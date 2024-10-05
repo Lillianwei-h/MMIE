@@ -9,9 +9,6 @@
 <a href="https://huggingface.co/datasets/MMIE/MMIE">[📝 Dataset]</a>
 <a href="https://huggingface.co/MMIE/MMIE-Eval">[🤖 Eval Model]</a>
 <a href="https://huggingface.co/spaces/MMIE/Leaderboard">[🏆 Leaderboard]</a>
-<a href="#%F0%9F%8C%9F-overview">[🌟 Overview]</a>
-<a href="#%F0%9F%94%A7-benchmark-details">[🔧 Benchmark Details]</a>
-<a href="#%F0%9F%9A%A9-citation">[🚩 Citation]</a>
 </p>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/license/mit)
@@ -26,7 +23,7 @@
 </div>
 
 We present **MMIE**, a **M**assive **M**ultimodal **I**nterleaved understanding **E**valuation benchmark, designed for Large Vision-Language Models (LVLMs). MMIE provides a robust framework to assess the interleaved comprehension and generation capabilities of LVLMs across diverse domains, supported by reliable automated metrics.
-
+<!-- 
 ### 🔑 Key Features
 
 #### 🗂 Dataset
@@ -75,7 +72,7 @@ The MMIE evaluation metric achieves high correlations with human annotations in 
 
 ---
 
-
+ -->
 ## Setup
 We have host MMIE dataset on [HuggingFace]("https://huggingface.co/datasets/MMIE/MMIE"), where you should request access on this page first and shall be automatically approved.
 Please download all the files in this repository and unzip `images.tar.gz` to get all images. We also provide `overview.json`, which is an example of the format of our dataset.
