@@ -10,7 +10,7 @@
 <a href="https://huggingface.co/MMIE/MMIE-Eval">[🤖 Eval Model]</a>
 <a href="https://huggingface.co/spaces/MMIE/Leaderboard">[🏆 Leaderboard]</a>
 <a href="#%F0%9F%8C%9F-overview">[🌟 Overview]</a>
-<a href="#%F0%9F%94%A7-dataset-details">[🔧 Dataset Details]</a>
+<a href="#%F0%9F%94%A7-benchmark-details">[🔧 Benchmark Details]</a>
 <a href="#%F0%9F%9A%A9-citation">[🚩 Citation]</a>
 </p>
 
