@@ -74,7 +74,7 @@ The MMIE evaluation metric achieves high correlations with human annotations in 
 
  -->
 ## Setup
-We have host MMIE dataset on [HuggingFace]("https://huggingface.co/datasets/MMIE/MMIE"), where you should request access on this page first and shall be automatically approved.
+We have host MMIE dataset on [HuggingFace](https://huggingface.co/datasets/MMIE/MMIE), where you should request access on this page first and shall be automatically approved.
 Please download all the files in this repository and unzip `images.tar.gz` to get all images. We also provide `overview.json`, which is an example of the format of our dataset.
 
 
