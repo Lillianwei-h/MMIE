@@ -92,3 +92,9 @@ python main.py --model_path PATH_TO_MMIE-Eval --input_dir INPUT_DIR --input_file
 The output file should be at `./eval_outputs/eval_result.json` by default. You can also use arguments `--output_dir` and `--output_file` to specify your intended output position.
 
 ## Citation
+
+If you find our benchmark useful in your research, please kindly consider citing us:
+
+```bibtex
+@article{xxx
+}
