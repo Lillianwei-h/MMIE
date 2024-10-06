@@ -73,12 +73,12 @@ The MMIE evaluation metric achieves high correlations with human annotations in 
 ---
 
  -->
-## Setup
+## 📚 Setup
 We have host MMIE dataset on [HuggingFace](https://huggingface.co/datasets/MMIE/MMIE), where you should request access on this page first and shall be automatically approved.
 Please download all the files in this repository and unzip `images.tar.gz` to get all images. We also provide `overview.json`, which is an example of the format of our dataset.
 
 
-## Model Evaluation
+## 📦 Model Evaluation
 ### Setup
 #### Dataset Preparation
 Your to-eval data format should be:
@@ -137,8 +137,7 @@ pip install -r requirements.txt
 ```
 
 #### Model Preparation
-You can download our [MMIE-Eval](https://huggingface.co/Lillianwei/MMIE-Eval) model on huggingface.
-You can also refer to the document of [InternVL 2.0](https://internvl.readthedocs.io/en/latest/internvl2.0/introduction.html) to find more details since MMIE-Eval is a fine-tuned version of InternVL 2.0 4B.
+You can download our [MMIE-Eval](https://huggingface.co/Lillianwei/MMIE-Eval) model on HuggingFace and refer to the document of [InternVL 2.0](https://internvl.readthedocs.io/en/latest/internvl2.0/introduction.html) to find more details.
 
 #### Run
 ```bash
@@ -147,7 +146,7 @@ python main.py --model_path PATH_TO_MMIE-Eval --input_dir INPUT_DIR --input_file
 
 The output file should be at `./eval_outputs/eval_result.json` by default. You can also use arguments `--output_dir` and `--output_file` to specify your intended output position.
 
-## Citation
+## 📝 Citation
 
 If you find our benchmark useful in your research, please kindly consider citing us:
 
