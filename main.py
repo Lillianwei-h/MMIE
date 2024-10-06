@@ -12,6 +12,7 @@ import json
 from tqdm import tqdm
 import argparse
 import re
+import os
 
 IMAGENET_MEAN = (0.485, 0.456, 0.406)
 IMAGENET_STD = (0.229, 0.224, 0.225)
@@ -128,7 +129,7 @@ output_path = os.path.join(output_dir, output_name)
 temp_output_path = os.path.join(output_dir, 'temp', output_name)
 
 model:AutoModel = load_model(model_path)
-tokenizer = AutoTokenizer.from_pretrained(path, trust_remote_code=True, use_fast=False)
+tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True, use_fast=False)
 
 # set the max number of tiles in `max_num`
 generation_config = dict(max_new_tokens=1024, do_sample=False)
@@ -144,6 +145,7 @@ for d in tqdm(processed_data):
     answer = d['answer']
     images = d['images']
     system_prompt = get_prompt()
+    # use ground truth as reference in multi-step reasoning
     if "MSR" in d['id']:
         gt_answer = d['gt_answer']
         prompt = system_prompt.format(question=question,answer=answer,gt_answer=gt_answer)
@@ -195,6 +197,6 @@ sa_avg = average(sa_scores)
 pbl_avg = average(pbl_scores)
 msr_avg = average(msr_scores)
 print("\n----------------------------------------------------------------------------------------")
-print(f"File: {file_path}")
+print(f"File: {input_name}")
 print(f"MMIE Eval Results\nSample size: {len(gpt_scores)}\nAVG: {avg}\nSA: {sa_avg}\nPBL: {pbl_avg}\nMSR: {msr_avg}")
 print("----------------------------------------------------------------------------------------\n")

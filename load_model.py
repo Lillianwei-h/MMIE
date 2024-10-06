@@ -1,7 +1,6 @@
 import math
 import torch
-from transformers import AutoTokenizer, AutoModel
-from peft import PeftModel
+from transformers import AutoModel
 
 def split_model(model_name):
     device_map = {}
