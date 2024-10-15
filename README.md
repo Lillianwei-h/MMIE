@@ -151,13 +151,10 @@ The output file should be at `./eval_outputs/eval_result.json` by default. You c
 If you find our benchmark useful in your research, please kindly consider citing us:
 
 ```bibtex
-@misc{xia2024mmiemassivemultimodalinterleaved,
-      title={MMIE: Massive Multimodal Interleaved Comprehension Benchmark for Large Vision-Language Models}, 
-      author={Peng Xia and Siwei Han and Shi Qiu and Yiyang Zhou and Zhaoyang Wang and Wenhao Zheng and Zhaorun Chen and Chenhang Cui and Mingyu Ding and Linjie Li and Lijuan Wang and Huaxiu Yao},
-      year={2024},
-      eprint={2410.10139},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2410.10139}, 
+@article{xia2024mmie,
+  title={MMIE: Massive Multimodal Interleaved Comprehension Benchmark for Large Vision-Language Models},
+  author={Xia, Peng and Han, Siwei and Qiu, Shi and Zhou, Yiyang and Wang, Zhaoyang and Zheng, Wenhao and Chen, Zhaorun and Cui, Chenhang and Ding, Mingyu and Li, Linjie and Wang, Lijuan and Yao, Huaxiu},
+  journal={arXiv preprint arXiv:2410.10139},
+  year={2024}
 }
 ```
