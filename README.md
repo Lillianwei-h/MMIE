@@ -4,10 +4,10 @@
 # <p align="center"><b>MMIE: Massive Multimodal Interleaved Comprehension Benchmark for Large Vision-Language Models</b></p>
 <p align="center">
 <a href="https://mmie-bench.github.io">[📖 Project]</a>
-<a href="https://arxiv.org/abs/xxxxx">[📄 Paper]</a>
+<a href="https://arxiv.org/abs/2410.10139">[📄 Paper]</a>
 <a href="https://github.com/Lillianwei-h/MMIE">[💻 Code]</a>
 <a href="https://huggingface.co/datasets/MMIE/MMIE">[📝 Dataset]</a>
-<a href="https://huggingface.co/MMIE/MMIE-Eval">[🤖 Eval Model]</a>
+<a href="https://huggingface.co/MMIE/MMIE-Score">[🤖 Evaluation Model]</a>
 <a href="https://huggingface.co/spaces/MMIE/Leaderboard">[🏆 Leaderboard]</a>
 </p>
 
@@ -32,7 +32,7 @@ We present **MMIE**, a **M**assive **M**ultimodal **I**nterleaved understanding 
 - **Ground Truth Reference**: Each question comes paired with a reference, ensuring accurate evaluations of model performance.
 
 #### ⚙️ Metric
-- **Automated Scoring**: Evaluate your model’s results with our scoring model, [MMIE-Eval](https://huggingface.co/MMIE/MMIE-Eval), powered by **InternVL-2-4B**.
+- **Automated Scoring**: Evaluate your model’s results with our scoring model, [MMIE-Score](https://huggingface.co/MMIE/MMIE-Score), powered by **InternVL-2-4B**.
 - **Bias Mitigation**: Fine-tuned to reduce bias and ensure objective evaluations.
 - **Multimodal Capability**: Tailored for interleaved inputs and outputs, evaluating both text and image comprehension.
 - **High Correlation with Human Scores**: Outperforms alternative metrics such as GPT-4o in multimodal tasks, ensuring reliable benchmarking results.
@@ -137,11 +137,11 @@ pip install -r requirements.txt
 ```
 
 #### Model Preparation
-You can download our [MMIE-Eval](https://huggingface.co/Lillianwei/MMIE-Eval) model on HuggingFace and refer to the document of [InternVL 2.0](https://internvl.readthedocs.io/en/latest/internvl2.0/introduction.html) to find more details.
+You can download our [MMIE-Score](https://huggingface.co/Lillianwei/MMIE-Score) model on HuggingFace and refer to the document of [InternVL 2.0](https://internvl.readthedocs.io/en/latest/internvl2.0/introduction.html) to find more details.
 
 #### Run
 ```bash
-python main.py --model_path PATH_TO_MMIE-Eval --input_dir INPUT_DIR --input_file INPUT_FILE
+python main.py --model_path PATH_TO_MMIE-Score --input_dir INPUT_DIR --input_file INPUT_FILE
 ```
 
 The output file should be at `./eval_outputs/eval_result.json` by default. You can also use arguments `--output_dir` and `--output_file` to specify your intended output position.
