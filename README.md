@@ -134,6 +134,7 @@ cd MMIE
 conda create -n MMIE python=3.11
 conda activate MMIE
 pip install -r requirements.txt
+pip install flash_attn
 ```
 
 #### Model Preparation
