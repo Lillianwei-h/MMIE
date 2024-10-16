@@ -137,7 +137,7 @@ pip install -r requirements.txt
 ```
 
 #### Model Preparation
-You can download our [MMIE-Score](https://huggingface.co/Lillianwei/MMIE-Score) model on HuggingFace and refer to the document of [InternVL 2.0](https://internvl.readthedocs.io/en/latest/internvl2.0/introduction.html) to find more details.
+You can download our [MMIE-Score](https://huggingface.co/MMIE/MMIE-Score) model on HuggingFace and refer to the document of [InternVL 2.0](https://internvl.readthedocs.io/en/latest/internvl2.0/introduction.html) to find more details.
 
 #### Run
 ```bash
