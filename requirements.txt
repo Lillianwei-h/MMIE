@@ -28,7 +28,6 @@ einops-exts==0.0.4
 fastapi==0.115.0
 ffmpy==0.4.0
 filelock==3.16.1
-flash-attn==2.6.3
 fonttools==4.54.1
 frozenlist==1.4.1
 fsspec==2024.9.0
