@@ -181,7 +181,7 @@ msr_scores = []
 for d in processed_data:
     gpt_feedback = d['gpt_feedback']
     gpt_score = find_score(gpt_feedback)
-    if isinstance(gpt_score,int) and gpt_score<=5 and gpt_score>=0:
+    if isinstance(gpt_score,int) and gpt_score<=6 and gpt_score>=0:
         gpt_scores.append(gpt_score)
         if "SA" in d['id']:
             sa_scores.append(gpt_score)
