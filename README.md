@@ -112,7 +112,7 @@ Your to-eval data format should be:
     ...
 ]
 ```
-`gt_answer` is only used for Multi-step Reasoning tasks. But it is required in the data format. You can set `"gt_answer": [{"text": None,"image":None}]` for other tasks.
+Currently `gt_answer` is only used for Multi-step Reasoning tasks. But it is required in the data format. You can set `"gt_answer": [{"text": None,"image":None}]` for other tasks.
 
 Make sure the file structure be:
 ```
