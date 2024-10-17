@@ -23,7 +23,7 @@ def get_dataset(input_dir, file_name, temp_output_path=None):
             if q['text'] is not None:
                 question_text+=q['text']+'\n'
             if q['image'] is not None:
-                image_path = os.path.join(DATA_DIR,dataset,q['image'])
+                image_path = os.path.join(input_dir,q['image'])
                 if os.path.exists(image_path):
                     question_text+=f"Image-{image_no}: <image>\n"
                     image_no+=1
@@ -40,7 +40,7 @@ def get_dataset(input_dir, file_name, temp_output_path=None):
             if image_no>2:
                 break
             if a['image'] is not None:
-                image_path = os.path.join(DATA_DIR,dataset,a['image'])
+                image_path = os.path.join(input_dir,a['image'])
                 if os.path.exists(image_path):
                     answer_text+=f"Image-{image_no}: <image>\n"
                     image_no+=1
