@@ -144,7 +144,7 @@ for d in tqdm(processed_data):
     question = d['question']
     answer = d['answer']
     images = d['images']
-    system_prompt = get_prompt()
+    system_prompt = get_prompt(d['id'])
     # use ground truth as reference in multi-step reasoning
     if "MSR" in d['id']:
         gt_answer = d['gt_answer']
@@ -158,8 +158,12 @@ for d in tqdm(processed_data):
         pixel_value = load_image(image, max_num=12).to(torch.bfloat16).cuda()
         pixel_values_list.append(pixel_value)
         num_patches_list.append(pixel_value.size(0))
-    pixel_values = torch.cat(pixel_values_list, dim=0)
-
+    
+    if len(pixel_values_list)!=0:
+        pixel_values = torch.cat(pixel_values_list, dim=0)
+    else:
+        pixel_values = None
+        
     response, history = model.chat(tokenizer, pixel_values, prompt, generation_config,
                             num_patches_list=num_patches_list,
                             history=None, return_history=True)
