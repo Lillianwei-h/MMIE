@@ -108,7 +108,7 @@ def load_image(image_file, input_size=448, max_num=12):
 
 parser = argparse.ArgumentParser(description="MMIE Evaluation")
 
-parser.add_argument('--model_path', type=str, default='MMIE-Eval', help='Path to the eval model directory')
+parser.add_argument('--model_path', type=str, default='MMIE/MMIE-Score', help='Path to the eval model directory')
 parser.add_argument('--input_dir', type=str, default='./eval_inputs', help='Directory containing the input data')
 parser.add_argument('--input_name', type=str, default='data.json', help='Name of the input data file')
 parser.add_argument('--output_dir', type=str, default='./eval_outputs', help='Directory to save the output results')
