@@ -139,11 +139,11 @@ pip install flash_attn
 ```
 
 #### Model Preparation
-You can download our [MMIE-Score](https://huggingface.co/MMIE/MMIE-Score) model on HuggingFace and refer to the document of [InternVL 2.0](https://internvl.readthedocs.io/en/latest/internvl2.0/introduction.html) to find more details.
+You can request access to our [MMIE-Score](https://huggingface.co/MMIE/MMIE-Score) model on HuggingFace and refer to the document of [InternVL 2.0](https://internvl.readthedocs.io/en/latest/internvl2.0/introduction.html) to find more details.
 
 #### Run
 ```bash
-python main.py --model_path PATH_TO_MMIE-Score --input_dir INPUT_DIR --input_file INPUT_FILE
+python main.py --input_dir INPUT_DIR --input_file INPUT_FILE
 ```
 
 The output file should be at `./eval_outputs/eval_result.json` by default. You can also use arguments `--output_dir` and `--output_file` to specify your intended output position.
