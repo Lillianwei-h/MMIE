@@ -60,7 +60,7 @@ def get_dataset(input_dir, file_name, temp_output_path=None):
         if len(images) <= 4:
             processed_data.append(processed_data_dict)
 
-    if os.path.exists(temp_output_path):
+    if temp_output_path and os.path.exists(temp_output_path):
         print("Find temp data!")
         with open(temp_output_path, 'r') as f:
             temp_data = json.load(f)
